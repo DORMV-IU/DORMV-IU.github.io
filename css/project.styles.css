@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: black;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.Landing {
+  height: 100vh;
+  width: 100vw;
+  background: url("../html/projects.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.Landing h1 {
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 120px;
+  margin-top: 140px;
+}
+
+.Landing h2 {
+  color: #FFFFFF;
+  font-weight: 300;
+  font-family: "Roboto";
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 2.5px;
+  margin-top: 15px;
+}
+
+.Landing button {
+  border: 0;
+  outline: 0;
+  padding: 12px 30px;
+  background: #2176FF;
+  border-radius: 50px;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  margin-top: 35px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.Landing .work:hover {
+  background: #1A71FF;
+}
+
+.our_work {
+  width: 100vw;
+  height: auto;
+  background: white;
+  padding: 90px;
+  overflow: hidden;
+}
+
+.our_work h2 {
+  margin-top: 15px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 70px;
+  color: #323643;
+}
+
+.our_work p {
+  margin-top: 15px;
+  font-family: "Saira Extra Condensed";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #747A87;
+}
+
+.our_work .divide {
+  margin-top: 30px;
+}
+
+.our_work .portfolio_imgs {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 780px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.our_work .portfolio_imgs .row1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 370px;
+}
+
+.our_work .portfolio_imgs .row1 .image1,
+.our_work .portfolio_imgs .row1 .image2,
+.our_work .portfolio_imgs .row1 .image3 {
+  position: relative;
+  height: 370px;
+  width: 370px;
+}
+
+.our_work .portfolio_imgs .row1 .image1 img,
+.our_work .portfolio_imgs .row1 .image2 img,
+.our_work .portfolio_imgs .row1 .image3 img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.our_work .portfolio_imgs .row1 .image1 .overlay,
+.our_work .portfolio_imgs .row1 .image2 .overlay,
+.our_work .portfolio_imgs .row1 .image3 .overlay {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.our_work .portfolio_imgs .row1 .image1 .overlay p,
+.our_work .portfolio_imgs .row1 .image2 .overlay p,
+.our_work .portfolio_imgs .row1 .image3 .overlay p {
+  color: #FFFFFF;
+  font-family: "Saira Extra Condensed";
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.our_work .portfolio_imgs .row1 .image1:hover .overlay {
+  opacity: 1;
+}
+
+.our_work .portfolio_imgs .row1 .image2:hover .overlay {
+  opacity: 1;
+}
+
+.our_work .portfolio_imgs .row1 .image3:hover .overlay {
+  opacity: 1;
+}
+
+.our_work .portfolio_imgs .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 370px;
+}
+
+.our_work .portfolio_imgs .row2 .image4 {
+  position: relative;
+  height: 370px;
+  width: 370px;
+}
+
+.our_work .portfolio_imgs .row2 .image4 img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.our_work .portfolio_imgs .row2 .image4 .overlay {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.our_work .portfolio_imgs .row2 .image4 .overlay p {
+  color: #FFFFFF;
+  font-family: "Saira Extra Condensed";
+  font-weight: 500;
+}
+
+.our_work .portfolio_imgs .row2 .image4:hover .overlay {
+  opacity: 1;
+}
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  background: url("../html/contact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact h2 {
+  font-family: "Saira Extra Condensed";
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 117px;
+  color: #FFFFFF;
+}
+
+.contact p {
+  font-family: "Saira Extra Condensed";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+  letter-spacing: 3px;
+}
+
+.contact button {
+  border: 0;
+  outline: 0;
+  padding: 12px 30px;
+  background: #FFFFFF;
+  border-radius: 50px;
+  color: #1F1F27;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  margin-top: 30px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.contact button:hover {
+  background: #2176FF;
+  color: white;
+}
+
+.btt {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: 0;
+  font-size: 20px;
+  position: fixed;
+  top: 80%;
+  left: 90%;
+  background: rgba(0, 0, 0, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.btt:hover {
+  background: rgba(0, 0, 0, 0.95);
+  color: rgba(255, 255, 255, 0.95);
+}
+/*# sourceMappingURL=project.styles.css.map */

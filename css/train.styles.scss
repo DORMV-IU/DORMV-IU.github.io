@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+nav {
+    background: #323643;
+}
+
+.description {
+    background: white;
+    width: 100vw;
+    height: auto;
+    padding: 90px;
+
+    h2 {
+        font-family: "Saira Extra Condensed";
+        color: #323643;
+        font-weight: 500;
+        line-height: 30px;
+        font-size: 24px;
+    }
+
+    h4 {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        font-family: "Saira Extra Condensed";
+        color: #323643;
+        font-weight: 400;
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+    .details {
+        width: 100%;
+        margin-top: 75px;
+        display: flex;
+        justify-content: space-between;
+
+
+        .details_left {
+            width: 49%;
+            height: auto;
+
+            img {
+                width: 100%;
+                transition: all .3s ease-in;
+                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .details_right {
+            width: 40%;
+
+            img {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            h3 {
+                font-family: "Roboto";
+                font-size: 42px;
+                font-weight: 700;
+                line-height: 63px;
+                color: #323643;
+            }
+
+            p {
+                font-family: "Saira Extra Condensed";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+                color: #747187;
+                letter-spacing: 0.5px;
+
+                i {
+                    color: #2176FF;
+                    margin-right: 15px;
+                }
+            }
+
+            .android {
+                border: 0;
+                outline: 0;
+                padding: 12px 30px;
+                background: linear-gradient(180deg, #B0DA65, #CBE688);
+                border-radius: 50px;
+                color: #54770F;
+                font-family: "Montserrat";
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 2.5px;
+                cursor: pointer;
+                margin-top: 30px;
+                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+                transition: all .2s ease-in-out;
+            }
+
+            .android:hover {
+                background: linear-gradient(180deg, #CBE688, #B0DA65);
+                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+
+}
+
+.deets {
+    width: 100vw;
+    height: auto;
+    padding: 90px;
+    background: #F8F8F8;
+
+    .deliverables {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            width: 48%;
+            height: auto;
+
+            img {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            h3 {
+                font-family: "Roboto";
+                font-size: 42px;
+                font-weight: 700;
+                line-height: 63px;
+                color: #323643;
+            }
+
+            p {
+                font-family: "Saira Extra Condensed";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+                color: #747187;
+                letter-spacing: 0.5px;
+
+                i {
+                    color: #2176FF;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .right {
+            width: 48%;
+            height: auto;
+
+            img {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            h3 {
+                font-family: "Roboto";
+                font-size: 42px;
+                font-weight: 700;
+                line-height: 63px;
+                color: #323643;
+            }
+
+            p {
+                font-family: "Saira Extra Condensed";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+                color: #747187;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+}
+
+.moreProjects {
+    background: white;
+    width: 100vw;
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-family: "Roboto";
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 63px;
+        color: #323643;
+    }
+
+    p {
+        font-family: "Saira Extra Condensed";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #747187;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+
+    .portfolio_imgs {
+        position: relative;
+        margin-top: 150px;
+        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+
+        .row {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 300px;
+
+            .image1 {
+                background: url('../html/nileconnect.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .image2 {
+                background: url('../html/lead.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .image3 {
+                background: url('../html/nasara.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .image4 {
+                background: url('../html/a2k.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .image1,
+            .image2,
+            .image3,
+            .image4 {
+                position: relative;
+                height: 280px;
+                width: 280px;
+                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+                border-radius: 10px 10px 10px 10px;
+
+                .overlay {
+                    position: absolute;
+                    border-radius: 10px 10px 10px 10px;
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.85);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: all .3s ease-in;
+
+                    p {
+                        color: #FFFFFF;
+                        font-family: "Saira Extra Condensed";
+                        font-weight: 500;
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .image1:hover .overlay {
+                opacity: 1;
+            }
+
+            .image2:hover .overlay {
+                opacity: 1;
+            }
+
+            .image3:hover .overlay {
+                opacity: 1;
+            }
+
+            .image4:hover .overlay {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.contact {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: url('../html/contact.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h2 {
+        font-family: "Saira Extra Condensed";
+        font-weight: 700;
+        font-size: 84px;
+        line-height: 117px;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-family: "Saira Extra Condensed";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        letter-spacing: 3px;
+    }
+
+    button {
+        border: 0;
+        outline: 0;
+        padding: 12px 30px;
+        background: #FFFFFF;
+        border-radius: 50px;
+        color: #1F1F27;
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.5px;
+        cursor: pointer;
+        margin-top: 30px;
+        transition: all .3s ease-in-out;
+    }
+
+    button:hover {
+        background: #2176FF;
+        color: white;
+    }
+
+}
+
+.btt {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    background: rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    transition: all .2s ease-in;
+
+}
+
+.btt:hover {
+    background: rgba(0, 0, 0, 0.95);
+    color: rgba(255, 255, 255, 0.95);
+}

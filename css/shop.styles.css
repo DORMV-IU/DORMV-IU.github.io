@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: black;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+nav {
+  background: #323643;
+}
+
+.storeItems {
+  width: 100vw;
+  background: white;
+  padding: 90px;
+}
+
+.storeItems .drop_downs {
+  z-index: 1000;
+  height: auto;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.storeItems .drop_downs .down_btnz {
+  width: 41px;
+  height: 41px;
+  background: #FBFAF9;
+  border: 0;
+  outline: 0;
+  border: 0.5px solid #DBDBDB;
+  cursor: pointer;
+  color: #333333;
+}
+
+.storeItems .drop_downs .default_order-container {
+  position: relative;
+}
+
+.storeItems .drop_downs .default_order-container .default_order {
+  background: #FBFAF9;
+  border: 0.5px solid #DBDBDB;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.storeItems .drop_downs .default_order-container .default_order p {
+  font-family: "Saira Extra Condensed";
+  font-size: 12px;
+  margin-left: 15px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 39px;
+}
+
+.storeItems .drop_downs .default_order-container .default_order button {
+  width: 41px;
+  background: #FBFAF9;
+  border: 0;
+  outline: 0;
+  border-left: 0.5px solid #DBDBDB;
+  cursor: pointer;
+  color: #333333;
+}
+
+.storeItems .drop_downs .default_order-container .dropDownContent {
+  z-index: 1000;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  position: absolute;
+  background: #FBFAF9;
+  border: 0.5px solid #DBDBDB;
+  border-bottom: 0;
+  width: 200px;
+  height: auto;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.storeItems .drop_downs .default_order-container .dropDownContent .order {
+  border-bottom: 0.5px solid #DBDBDB;
+}
+
+.storeItems .drop_downs .default_order-container .dropDownContent .order p {
+  font-family: "Saira Extra Condensed";
+  font-size: 12px;
+  margin-left: 15px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 39px;
+}
+
+.storeItems .drop_downs .default_order-container:hover .dropDownContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+}
+
+.storeItems .drop_downs .drpbtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.storeItems .shopTems {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.storeItems .shopTems .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.storeItems .shopTems .row .tem:hover {
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(8, 4, 4, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px 0px rgba(8, 4, 4, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.storeItems .shopTems .row .tem {
+  overflow: hidden;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(8, 4, 4, 0.1), 0px 6px 20px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 8px 0px rgba(8, 4, 4, 0.1), 0px 6px 20px 0px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  width: 280px;
+  height: auto;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.storeItems .shopTems .row .tem .img {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.storeItems .shopTems .row .tem .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.storeItems .shopTems .row .tem .img .sale {
+  position: absolute;
+  top: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background: #2176FF;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  font-family: "Saira Extra Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.storeItems .shopTems .row .tem .deets {
+  padding: 20px;
+  width: 100%;
+  background: #FFFFFF;
+}
+
+.storeItems .shopTems .row .tem .deets h2 {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #03A9F4;
+}
+
+.storeItems .shopTems .row .tem .deets h3 {
+  font-family: "Saira Extra Condensed";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #03A9F4;
+}
+
+.storeItems .shopTems .row .tem .deets .endbtns {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.storeItems .shopTems .row .tem .deets .endbtns i {
+  margin-right: 3px;
+}
+
+.storeItems .shopTems .row .tem .deets .endbtns p {
+  font-family: "Saira Extra Condensed";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #03A9F4;
+}
+
+.storeItems .pages {
+  text-align: right;
+  width: 100%;
+}
+
+.storeItems .pages div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.storeItems .pages div .down_btnz {
+  width: 41px;
+  height: 41px;
+  background: #FBFAF9;
+  border: 0;
+  outline: 0;
+  border: 0.5px solid #DBDBDB;
+  cursor: pointer;
+  color: #333333;
+  margin-left: 5px;
+  font-family: "Saira Extra Condensed";
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.storeItems .pages div .down_btnz:hover {
+  background: #03A9F4;
+  color: white;
+}
+
+.storeItems .pages div .active {
+  background: #03A9F4;
+  color: white;
+}
+
+.storeItems .pages div p {
+  font-family: "Saira Extra Condensed";
+  margin-left: 5px;
+  color: #333333;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.storeItems .pages div p:hover {
+  color: #03A9F4;
+}
+
+.storeItems .pages div i {
+  margin-left: 2px;
+}
+
+.btt {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(8, 4, 4, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px 0px rgba(8, 4, 4, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: 0;
+  font-size: 20px;
+  position: fixed;
+  top: 80%;
+  left: 90%;
+  background: rgba(0, 0, 0, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.btt:hover {
+  background: rgba(0, 0, 0, 0.95);
+  color: rgba(255, 255, 255, 0.95);
+}
+/*# sourceMappingURL=shop.styles.css.map */

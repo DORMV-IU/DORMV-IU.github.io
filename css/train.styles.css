@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: black;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+nav {
+  background: #323643;
+}
+
+.description {
+  background: white;
+  width: 100vw;
+  height: auto;
+  padding: 90px;
+}
+
+.description h2 {
+  font-family: "Saira Extra Condensed";
+  color: #323643;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 24px;
+}
+
+.description h4 {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-family: "Saira Extra Condensed";
+  color: #323643;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.description .details {
+  width: 100%;
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description .details .details_left {
+  width: 49%;
+  height: auto;
+}
+
+.description .details .details_left img {
+  width: 100%;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.description .details .details_right {
+  width: 40%;
+}
+
+.description .details .details_right img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.description .details .details_right h3 {
+  font-family: "Roboto";
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 63px;
+  color: #323643;
+}
+
+.description .details .details_right p {
+  font-family: "Saira Extra Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #747187;
+  letter-spacing: 0.5px;
+}
+
+.description .details .details_right p i {
+  color: #2176FF;
+  margin-right: 15px;
+}
+
+.description .details .details_right .android {
+  border: 0;
+  outline: 0;
+  padding: 12px 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B0DA65), to(#CBE688));
+  background: linear-gradient(180deg, #B0DA65, #CBE688);
+  border-radius: 50px;
+  color: #54770F;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  margin-top: 30px;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.description .details .details_right .android:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#CBE688), to(#B0DA65));
+  background: linear-gradient(180deg, #CBE688, #B0DA65);
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.deets {
+  width: 100vw;
+  height: auto;
+  padding: 90px;
+  background: #F8F8F8;
+}
+
+.deets .deliverables {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.deets .deliverables .left {
+  width: 48%;
+  height: auto;
+}
+
+.deets .deliverables .left img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.deets .deliverables .left h3 {
+  font-family: "Roboto";
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 63px;
+  color: #323643;
+}
+
+.deets .deliverables .left p {
+  font-family: "Saira Extra Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #747187;
+  letter-spacing: 0.5px;
+}
+
+.deets .deliverables .left p i {
+  color: #2176FF;
+  margin-right: 15px;
+}
+
+.deets .deliverables .right {
+  width: 48%;
+  height: auto;
+}
+
+.deets .deliverables .right img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.deets .deliverables .right h3 {
+  font-family: "Roboto";
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 63px;
+  color: #323643;
+}
+
+.deets .deliverables .right p {
+  font-family: "Saira Extra Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #747187;
+  letter-spacing: 0.5px;
+}
+
+.moreProjects {
+  background: white;
+  width: 100vw;
+  padding: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.moreProjects img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.moreProjects h3 {
+  font-family: "Roboto";
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 63px;
+  color: #323643;
+}
+
+.moreProjects p {
+  font-family: "Saira Extra Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #747187;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.moreProjects .portfolio_imgs {
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.moreProjects .portfolio_imgs .row {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 300px;
+}
+
+.moreProjects .portfolio_imgs .row .image1 {
+  background: url("../html/nileconnect.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.moreProjects .portfolio_imgs .row .image2 {
+  background: url("../html/lead.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.moreProjects .portfolio_imgs .row .image3 {
+  background: url("../html/nasara.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.moreProjects .portfolio_imgs .row .image4 {
+  background: url("../html/a2k.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.moreProjects .portfolio_imgs .row .image1,
+.moreProjects .portfolio_imgs .row .image2,
+.moreProjects .portfolio_imgs .row .image3,
+.moreProjects .portfolio_imgs .row .image4 {
+  position: relative;
+  height: 280px;
+  width: 280px;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.moreProjects .portfolio_imgs .row .image1 .overlay,
+.moreProjects .portfolio_imgs .row .image2 .overlay,
+.moreProjects .portfolio_imgs .row .image3 .overlay,
+.moreProjects .portfolio_imgs .row .image4 .overlay {
+  position: absolute;
+  border-radius: 10px 10px 10px 10px;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.moreProjects .portfolio_imgs .row .image1 .overlay p,
+.moreProjects .portfolio_imgs .row .image2 .overlay p,
+.moreProjects .portfolio_imgs .row .image3 .overlay p,
+.moreProjects .portfolio_imgs .row .image4 .overlay p {
+  color: #FFFFFF;
+  font-family: "Saira Extra Condensed";
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.moreProjects .portfolio_imgs .row .image1:hover .overlay {
+  opacity: 1;
+}
+
+.moreProjects .portfolio_imgs .row .image2:hover .overlay {
+  opacity: 1;
+}
+
+.moreProjects .portfolio_imgs .row .image3:hover .overlay {
+  opacity: 1;
+}
+
+.moreProjects .portfolio_imgs .row .image4:hover .overlay {
+  opacity: 1;
+}
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  background: url("../html/contact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact h2 {
+  font-family: "Saira Extra Condensed";
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 117px;
+  color: #FFFFFF;
+}
+
+.contact p {
+  font-family: "Saira Extra Condensed";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+  letter-spacing: 3px;
+}
+
+.contact button {
+  border: 0;
+  outline: 0;
+  padding: 12px 30px;
+  background: #FFFFFF;
+  border-radius: 50px;
+  color: #1F1F27;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  margin-top: 30px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.contact button:hover {
+  background: #2176FF;
+  color: white;
+}
+
+.btt {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: 0;
+  font-size: 20px;
+  position: fixed;
+  top: 80%;
+  left: 90%;
+  background: rgba(0, 0, 0, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.btt:hover {
+  background: rgba(0, 0, 0, 0.95);
+  color: rgba(255, 255, 255, 0.95);
+}
+/*# sourceMappingURL=train.styles.css.map */

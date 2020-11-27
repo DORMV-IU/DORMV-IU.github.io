@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: black;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.Landing {
+  height: 100vh;
+  width: 100vw;
+  background: url("../html/tech.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.Landing .welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.Landing .welcome h1 {
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 63px;
+}
+
+.Landing .welcome h2 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-family: "Saira Extra Condensed";
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.contact {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  background: url("../html/contact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact img {
+  height: 330px;
+}
+
+.contact h2 {
+  font-family: "Saira Extra Condensed";
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 117px;
+  color: #FFFFFF;
+}
+
+.contact p {
+  font-family: "Saira Extra Condensed";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+  letter-spacing: 3px;
+}
+
+.contact .icons {
+  width: 85%;
+  height: 340px;
+  margin-top: 45px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .icons .contact_boxes {
+  height: 340px;
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.contact .icons .contact_boxes .icn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 45px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  outline: 0;
+  border: 0;
+  color: #2176FF;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.contact .icons .contact_boxes .icn:hover {
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contact .icons .contact_boxes .contactInfo {
+  position: absolute;
+  bottom: 32px;
+  text-align: center;
+}
+
+.contact .icons .contact_boxes .contactInfo h2 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  color: white;
+}
+
+.contact .icons .contact_boxes .contactInfo h4 {
+  margin-top: 15px;
+  font-family: "Saira Extra Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: white;
+}
+
+.contact .cont {
+  border: 0;
+  outline: 0;
+  padding: 12px 30px;
+  background: #FFFFFF;
+  border-radius: 50px;
+  color: #1F1F27;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  margin-top: 30px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.contact .cont:hover {
+  background: #2176FF;
+  color: white;
+}
+
+.btt {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: 0;
+  font-size: 20px;
+  position: fixed;
+  top: 80%;
+  left: 90%;
+  background: rgba(0, 0, 0, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.btt:hover {
+  background: rgba(0, 0, 0, 0.95);
+  color: rgba(255, 255, 255, 0.95);
+}
+/*# sourceMappingURL=contact.styles.css.map */

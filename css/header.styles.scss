@@ -1,0 +1,45 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        li {
+            list-style: none;
+
+            .active {
+                font-weight: 500;
+            }
+
+            a {
+                text-decoration: none;
+                color: #EDEDED;
+                font-family: "Montserrat";
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 10px;
+                transition: all .2s ease-in-out;
+            }
+
+            a:hover {
+                color: #2176FF;
+            }
+
+            .active:hover {
+                color: #EDEDED;
+            }
+
+        }
+    }
+
+
+}

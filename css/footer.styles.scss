@@ -1,0 +1,48 @@
+footer {
+    background: #282A2B;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+
+    .copy {
+        padding: 30px;
+        margin-left: 50px;
+
+        p {
+            font-family: "Saira Extra Condensed";
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #D8D8D8;
+        }
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 80px;
+
+        .sc_btn {
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 50%;
+            outline: 0;
+            border: 0;
+            margin-left: 10px;
+            cursor: pointer;
+
+            p {
+                color: #2176FF;
+            }
+        }
+
+        .sc_btn:hover {
+            background: #EDEDED;
+        }
+    }
+}
